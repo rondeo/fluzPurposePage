@@ -1,0 +1,32 @@
+.nav {
+  &-container {
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    width: 100px;
+    padding-left: 80px;
+    a {
+      height: auto;
+    }
+    img {
+      padding-top: 20px;
+    }
+  }
+
+  &-main {
+    flex: 8;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 80px;
+    a {
+      padding-top: 30px;
+      padding-left: 30px;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

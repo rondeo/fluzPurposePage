@@ -1,0 +1,22 @@
+.Intro {
+  width: 98%;
+  margin: 0 auto;
+
+  &-container {
+    height: 400px;
+    background-color: #ff5b5a;
+  }
+
+  &-description {
+    width: 50%;
+    margin: auto;
+    img {
+      width: 100px;
+      margin-top: 100px;
+    }
+    p {
+      color: white;
+      line-height: 1.5rem;
+    }
+  }
+}

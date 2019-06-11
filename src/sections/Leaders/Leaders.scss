@@ -1,0 +1,26 @@
+.Leaders {
+  width: 80%;
+  margin: 50px auto;
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-logos {
+    display: flex;
+    flex-wrap: wrap;
+    &-logo {
+      width: 25%;
+      height: auto;
+      img {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+  &-description {
+    width: 70%;
+    margin: 50px auto;
+  }
+}

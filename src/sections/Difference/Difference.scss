@@ -1,0 +1,70 @@
+.Difference {
+  height: 1200px;
+  width: 98%;
+  margin: 0 auto;
+  &-detail-1 {
+    display: flex;
+    height: 600px;
+    &-description {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      span,
+      h1,
+      p {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 20px;
+        line-height: 1.5rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+    }
+
+    &-image {
+      flex: 1;
+      padding-top: 100px;
+
+      img {
+        width: 50%;
+        height: auto;
+      }
+      .cashBackImage2 {
+        left: 20px;
+      }
+    }
+  }
+
+  &-detail-2 {
+    height: 600px;
+    display: flex;
+    background-color: #f4f5f7;
+    &-image {
+      flex: 1;
+      padding-top: 100px;
+
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+
+    &-description {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
