@@ -4,11 +4,12 @@ import cashBackImage1 from "../../assets/cashBackImage1.png";
 import cashBackImage2 from "../../assets/cashBackImage2.png";
 import pebble1 from "../../assets/rollingPebbleImage1.png";
 import pebble2 from "../../assets/rollingPebbleImage2.png";
+import { SimpleImg } from "react-simple-img";
 
 const Difference = () => {
   return (
     <section className="Difference Difference-container">
-      <div className="Difference-detail-1">
+      <div className="Difference-detail-1 flex-container">
         <div className="Difference-detail-1-description">
           <span className="second-title">OUR DIFFERENCE</span>
           <h1 className="first-title">Reinventing cash back</h1>
@@ -21,12 +22,14 @@ const Difference = () => {
           </p>
         </div>
         <div className="Difference-detail-1-image">
-          <img
+          <SimpleImg
+            placeholder="linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%)"
             className="cashBackImage1"
             src={cashBackImage1}
             alt="reinventing cash back 1"
           />
-          <img
+          <SimpleImg
+            placeholder="linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%)"
             className="cashBackImage2"
             src={cashBackImage2}
             alt="reinventing cash back 2"
@@ -34,7 +37,7 @@ const Difference = () => {
         </div>
       </div>
 
-      <div className="Difference-detail-2">
+      <div className="Difference-detail-2 flex-container">
         <div className="Difference-detail-2-image">
           <img className="pebble1" src={pebble2} alt="rolling pebble 2" />
           <img className="pebble1" src={pebble1} alt="rolling pebble 1" />

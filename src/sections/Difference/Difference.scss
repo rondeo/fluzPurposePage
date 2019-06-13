@@ -1,10 +1,12 @@
+@import "~include-media/dist/_include-media.scss";
+
 .Difference {
-  height: 1200px;
+  height: auto;
   width: 98%;
   margin: 0 auto;
   &-detail-1 {
     display: flex;
-    height: 600px;
+    height: auto;
     &-description {
       flex: 1;
       display: flex;
@@ -29,14 +31,29 @@
 
     &-image {
       flex: 1;
-      padding-top: 100px;
+      display: flex;
+      margin-bottom: 80px;
 
-      img {
-        width: 50%;
+      @include media("<=tablet") {
+        padding-top: 30px;
+      }
+
+      .cashBackImage2,
+      .cashBackImage1 {
+        width: 47%;
         height: auto;
+        @include media("<=tablet") {
+          height: 250px !important;
+        }
+      }
+      .cashBackImage1 {
+        z-index: 10;
+        top: 5%;
+        left: 5%;
       }
       .cashBackImage2 {
-        left: 20px;
+        bottom: 5%;
+        right: 5%;
       }
     }
   }

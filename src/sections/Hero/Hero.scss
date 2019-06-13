@@ -1,5 +1,7 @@
+@import "~include-media/dist/_include-media.scss";
+
 .hero {
-  height: 600px;
+  height: auto;
   width: 98%;
   margin: 0 auto;
   background: linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%);
@@ -7,13 +9,19 @@
   &-container {
     display: flex;
     flex-direction: row;
+    @include media("<tablet") {
+      flex-direction: column-reverse;
+    }
   }
 
   &-text {
+    margin-bottom: 80px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: left;
     padding-left: 10%;
-    padding-top: 10%;
     color: white;
 
     h1 {
@@ -49,13 +57,21 @@
       }
     }
   }
+
   &-image {
     flex: 2;
+    @include media("<tablet") {
+      display: none;
+    }
+    .hero-image-content {
+      padding-top: 15%;
+      padding-bottom: 15%;
+      height: auto !important;
+    }
     img {
-      padding-top: 10%;
-      padding-right: 4%;
-      height: auto;
-      width: 60%;
+      @include media(">desktop", ">=tablet") {
+        height: 400px !important;
+      }
     }
   }
 }

@@ -1,0 +1,34 @@
+.Team {
+  width: 98%;
+  margin: 50px auto;
+  height: auto;
+  background: #f4f5f7;
+
+  &-content {
+    width: 80%;
+    padding-top: 1px;
+    margin: 50px auto;
+
+    &-cards {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-logos {
+      display: flex;
+      flex-wrap: wrap;
+      &-logo {
+        width: 25%;
+        height: auto;
+        img {
+          height: 100%;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+    &-description {
+      width: 70%;
+      margin: 50px auto;
+    }
+  }
+}

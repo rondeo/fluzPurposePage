@@ -4,7 +4,7 @@ import dialogueBubble from "../../assets/thinking.png";
 
 const Intro = () => {
   return (
-    <section className="Intro Intro-container">
+    <section className="Intro flex-container Intro-container">
       <div className="Intro-description">
         <img src={dialogueBubble} />
         <p>
