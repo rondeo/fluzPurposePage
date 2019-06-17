@@ -1,7 +1,24 @@
 @import "~include-media/dist/_include-media.scss";
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/columns.sass";
+@import "bulma/sass/base/helpers.sass";
+@import "bulma/sass/elements/button.sass";
 
 .App {
   text-align: center;
+  line-height: 1.75em;
+  font-family: "DIN Pro", "Arial Narrow", Arial, sans-serif;
+}
+
+@font-face {
+  font-family: DIN Pro;
+  src: url("assets/fonts/DINNextLTPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: DIN Pro;
+  font-weight: bold;
+  src: url("assets/fonts/DINNextLTPro-Bold.otf") format("opentype");
 }
 
 .App-logo {
@@ -39,8 +56,10 @@
   margin-bottom: 15px;
   color: black;
   font-size: 3rem;
+  font-weight: 500;
 }
 .second-title {
+  text-align: left;
   color: #fe4e4e;
   font-size: 1rem;
 }

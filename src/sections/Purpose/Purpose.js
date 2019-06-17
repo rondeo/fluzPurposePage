@@ -5,8 +5,8 @@ import fundingDream from "../../assets/fundingDream.png";
 const Purpose = () => {
   return (
     <section className="Purpose Purpose-container">
-      <div className="Purpose-detail flex-container">
-        <div className="Purpose-detail-description">
+      <div className="Purpose-detail flex-container columns">
+        <div className="Purpose-detail-description column">
           <span className="second-title">OUR PURPOSE</span>
           <h1 className="first-title">Funding your dreams</h1>
           <p>
@@ -17,7 +17,7 @@ const Purpose = () => {
             other connections.
           </p>
         </div>
-        <div className="Purpose-detail-image">
+        <div className="Purpose-detail-image column">
           <img
             className="fundingDream"
             src={fundingDream}

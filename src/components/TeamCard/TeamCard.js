@@ -7,10 +7,12 @@ const TeamCard = prop => {
   const { img, name, title } = prop;
 
   return (
-    <div className="card card-container simple-card">
+    <div className="card card-container simple-card column">
       <div className="card-detail">
         <SimpleImg
-          className="card-detail-mage"
+          height={280}
+          placeholder="linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%)"
+          className="card-detail-image"
           src={img}
           alt="profile avatar"
         />

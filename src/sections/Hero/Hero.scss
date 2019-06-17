@@ -1,77 +1,54 @@
-@import "~include-media/dist/_include-media.scss";
-
 .hero {
   height: auto;
   width: 98%;
-  margin: 0 auto;
+  margin: 0 auto !important;
   background: linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%);
 
-  &-container {
-    display: flex;
-    flex-direction: row;
-    @include media("<tablet") {
-      flex-direction: column-reverse;
-    }
-  }
-
   &-text {
-    margin-bottom: 80px;
-    flex: 1;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding-left: 10%;
+    padding: 5% 5% 5% 10% !important;
     color: white;
+    margin-bottom: 0 !important;
 
     h1 {
-      font-size: 3.5rem;
       font-weight: 800;
       margin-bottom: 0;
     }
 
     h2 {
-      margin-top: 0.5rem;
-      font-size: 2rem;
+      margin-top: 1rem;
       font-weight: 300;
     }
 
     &-button {
       width: 130px;
       height: 50px;
-      //   border-radius:50px;
-      a {
-        height: 100%;
-        width: 100%;
-        display: inline-block;
-        text-decoration: none;
-        background-color: #ff5959;
-        border-radius: 50px;
+      color: white;
+      text-decoration: none;
+      background-color: #ff5959;
+      border-color: #ff5959;
+    }
 
-        span {
-          font-size: 1.2rem;
-          line-height: 3rem;
-          padding-left: 2rem;
-          color: white;
-        }
-      }
+    &-button:hover {
+      border-color: #f17878;
+      color: #ecebeb;
+      transition: color ease-in-out 0.3s;
     }
   }
 
   &-image {
-    flex: 2;
-    @include media("<tablet") {
-      display: none;
-    }
+    position: relative;
     .hero-image-content {
       padding-top: 15%;
       padding-bottom: 15%;
       height: auto !important;
     }
-    img {
-      @include media(">desktop", ">=tablet") {
-        height: 400px !important;
-      }
-    }
+    // img {
+    //   @include media(">desktop", ">=tablet") {
+    //     height: 400px !important;
+    //   }
+    // }
   }
 }

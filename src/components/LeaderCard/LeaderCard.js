@@ -9,19 +9,25 @@ const LeaderCard = prop => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="card card-container">
+    <div className="card card-container column">
       <div className="card-header">
-        <p className="card-header-name"> {name} </p>
+        <p className="card-header-name">{name}</p>
         <img src={linkinIcon} alt="linkedIn logo" />
       </div>
 
-      <SimpleImg className="card-image" src={img} alt="profile avatar" />
+      <SimpleImg
+        height={300}
+        placeholder="linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%)"
+        className="card-image"
+        src={img}
+        alt="profile avatar"
+      />
       <p className="card-company"> {company} </p>
 
       <div className="card-detail">
         <div onClick={() => setShow(!show)} className="card-detail-title">
           {" "}
-          {title}{" "}
+          <span className={show ? "active arrow" : " arrow "}>{title}</span>
         </div>
 
         <CSSTransition
@@ -30,7 +36,7 @@ const LeaderCard = prop => {
           classNames="detail"
           unmountOnExit
         >
-          <p> {detail} </p>
+          {detail}
         </CSSTransition>
 
         {/* {show ? <p className="card-detail-title-more"> {detail} </p> : null} */}

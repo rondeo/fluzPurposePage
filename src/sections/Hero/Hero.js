@@ -7,17 +7,17 @@ import Tween from "rc-tween-one";
 
 const Hero = () => {
   return (
-    <section className="hero flex-container hero-container">
-      <div className="hero-text">
-        <h1>Cashback</h1>
-        <h2>You didn't even know was possiable</h2>
-        <div className="hero-text-button">
-          <a href="/">
-            <span>Explore</span>
-          </a>
-        </div>
+    <section className="hero hero-container columns">
+      <div className="hero-text column is-one-third columns">
+        <h1 className="is-size-1">Cashback</h1>
+        <h2 className="is-size-3 is-size-4-mobile">
+          You didn't even know was possible
+        </h2>
+        <a className="hero-text-button button is-rounded" href="/">
+          EXPLORE
+        </a>
       </div>
-      <div className="hero-image">
+      <div className="hero-image column is-hidden-mobile">
         <Tween
           animation={[
             { opacity: 1, duration: 2000 },

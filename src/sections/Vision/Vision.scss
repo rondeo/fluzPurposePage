@@ -1,14 +1,23 @@
+@import "~include-media/dist/_include-media.scss";
+
 .Vision {
+  width: 98%;
+  margin: 0 auto;
   height: auto;
   background: linear-gradient(180deg, #f3d2cb 0%, #f3e0d9 54.69%, #f7f4ef 100%);
   &-detail {
-    display: flex;
+    width: 100;
+    margin: 0 auto;
 
     &-description {
-      flex: 1;
+      width: 100%;
       display: flex;
       justify-content: center;
       flex-direction: column;
+
+      @include media("<=tablet") {
+        padding-bottom: 80px;
+      }
 
       span,
       h1,
@@ -27,10 +36,11 @@
     }
 
     &-image {
+      width: 100%;
       position: relative;
       padding-top: 100px;
       padding-bottom: 100px;
-      flex: 1;
+
       .bubbleunicorn1,
       .bubbleunicorn2 {
         position: absolute !important;

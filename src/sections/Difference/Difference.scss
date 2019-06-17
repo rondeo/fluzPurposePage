@@ -5,10 +5,8 @@
   width: 98%;
   margin: 0 auto;
   &-detail-1 {
-    display: flex;
     height: auto;
     &-description {
-      flex: 1;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -30,12 +28,11 @@
     }
 
     &-image {
-      flex: 1;
       display: flex;
       margin-bottom: 80px;
 
       @include media("<=tablet") {
-        padding-top: 30px;
+        padding-top: 15%;
       }
 
       .cashBackImage2,
@@ -59,16 +56,37 @@
   }
 
   &-detail-2 {
-    height: 600px;
-    display: flex;
+    height: auto;
     background-color: #f4f5f7;
+    width: 100%;
+    margin: 0 auto;
+    @include media("<=tablet") {
+      flex-direction: column-reverse;
+    }
     &-image {
+      display: flex;
       flex: 1;
       padding-top: 100px;
 
-      img {
-        width: 50%;
+      @include media("<=tablet") {
+        padding-top: 0px;
+        padding-bottom: 100px;
+      }
+
+      .pebble1,
+      .pebble2 {
+        width: 47%;
         height: auto;
+        @include media("<=tablet") {
+          height: 250px !important;
+        }
+      }
+      .pebble1 {
+        top: -10%;
+        left: 10%;
+      }
+      .pebble2 {
+        bottom: 5%;
       }
     }
 
@@ -77,10 +95,13 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-
-      h1 {
-        font-size: 3rem;
+      p {
+        padding: 15% 10% 10% 15%;
+        text-align: left;
         line-height: 3rem;
+        span {
+          color: #ff5959;
+        }
       }
     }
   }

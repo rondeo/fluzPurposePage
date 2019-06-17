@@ -8,9 +8,12 @@ import { SimpleImg } from "react-simple-img";
 
 const Difference = () => {
   return (
-    <section className="Difference Difference-container">
-      <div className="Difference-detail-1 flex-container">
-        <div className="Difference-detail-1-description">
+    <section className="Difference Difference-container ">
+      <div
+        className="Difference-detail-1 flex-container columns is-full
+"
+      >
+        <div className="Difference-detail-1-description column">
           <span className="second-title">OUR DIFFERENCE</span>
           <h1 className="first-title">Reinventing cash back</h1>
           <p>
@@ -21,7 +24,7 @@ const Difference = () => {
             other connections.
           </p>
         </div>
-        <div className="Difference-detail-1-image">
+        <div className="Difference-detail-1-image column">
           <SimpleImg
             placeholder="linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%)"
             className="cashBackImage1"
@@ -36,14 +39,29 @@ const Difference = () => {
           />
         </div>
       </div>
-
-      <div className="Difference-detail-2 flex-container">
-        <div className="Difference-detail-2-image">
-          <img className="pebble1" src={pebble2} alt="rolling pebble 2" />
-          <img className="pebble1" src={pebble1} alt="rolling pebble 1" />
+      <div
+        className="Difference-detail-2 flex-container  columns is-full
+"
+      >
+        <div className="Difference-detail-2-image column ">
+          <SimpleImg
+            placeholder="linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%)"
+            className="pebble1 "
+            src={pebble2}
+            alt="rolling pebble 2"
+          />
+          <SimpleImg
+            placeholder="linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%)"
+            className="pebble2 "
+            src={pebble1}
+            alt="rolling pebble 1"
+          />
         </div>
-        <div className="Difference-detail-2-description">
-          <p>It's the difference between one rolling pebble & a landslide</p>
+        <div className="Difference-detail-2-description column">
+          <p className="is-size-2">
+            It's the difference between one rolling pebble &{" "}
+            <span>a landslide</span>
+          </p>
         </div>
       </div>
     </section>

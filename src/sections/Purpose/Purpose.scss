@@ -1,9 +1,14 @@
+@import "~include-media/dist/_include-media.scss";
+
 .Purpose {
   height: auto;
   &-detail {
     display: flex;
 
     &-description {
+      @include media("<tablet") {
+        padding-top: 80px;
+      }
       flex: 1;
       display: flex;
       justify-content: center;
@@ -28,6 +33,7 @@
     &-image {
       padding-top: 100px;
       padding-bottom: 100px;
+      margin-bottom: 80px;
       img {
         width: 65%;
       }

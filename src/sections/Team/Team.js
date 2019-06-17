@@ -9,13 +9,23 @@ const Team = () => {
       <div className="Team-content">
         <div className="Team-content-description">
           <span className="second-title">OUR PEOPLE</span>
-          <h1 className="first-title">Working For You</h1>
+          <h1 className="first-title is-size-3-mobile">Working For You</h1>
           <p className="title-caption">
             We're the Fluz team, an eclectic group of programers designers,
             communicators and facilitators who heart and soul believe in our app
           </p>
         </div>
-        <div className="Team-content-cards">
+        <div className="Team-content-cards columns">
+          <TeamCard img={DouglasBraun} name="Name" title="title" />
+          <TeamCard img={DouglasBraun} name="Name" title="title" />
+          <TeamCard img={DouglasBraun} name="Name" title="title" />
+        </div>
+        <div className="Team-content-cards columns">
+          <TeamCard img={DouglasBraun} name="Name" title="title" />
+          <TeamCard img={DouglasBraun} name="Name" title="title" />
+          <TeamCard img={DouglasBraun} name="Name" title="title" />
+        </div>
+        <div className="Team-content-cards columns">
           <TeamCard img={DouglasBraun} name="Name" title="title" />
           <TeamCard img={DouglasBraun} name="Name" title="title" />
           <TeamCard img={DouglasBraun} name="Name" title="title" />
