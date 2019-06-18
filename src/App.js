@@ -10,9 +10,11 @@ import Vision from "./sections/Vision/Vision";
 import Team from "./sections/Team/Team";
 
 function App() {
+  const pages = ["ABOUT", "HOW IT WORKS", "GET STARTED"];
+
   return (
     <div className="App">
-      <Header />
+      <Header pages={pages} />
       <Hero />
       <Intro />
       <Difference />

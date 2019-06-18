@@ -1,23 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import logo from "../../assets/fluzLogo.svg";
 
 const Header = () => {
+  const [active, setActive] = useState(false);
+
   return (
-    <section className="nav nav-container columns is-mobile">
-      <div className="nav-logo column">
+    <nav className="navbar nav-bar">
+      <div className="nav-logo nav-brand ">
         <a href="/">
           <img src={logo} />
         </a>
+
+        <button
+          onClick={() => {
+            setActive(!active);
+          }}
+          className={`button navbar-burger ${active ? "is-active" : ""}`}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
-      <div className="nav-main column is-two-thirds-tablet">
-        <a className="start-button button is-rounded" href="/">
-          GET STARTED
-        </a>
-        <a href="/">HOW IT WORKS</a>
-        <a href="/">ABOUT</a>
+      <div className={`navbar-menu nav-bar-menu ${active ? "is-active" : ""}`}>
+        <div className="navbar-end ">
+          <a className="navbar-item is-size-6-mobile" href="/">
+            ABOUT
+          </a>
+          <a className="navbar-item is-size-6-mobile" href="/">
+            HOW IT WORKS
+          </a>
+          <a
+            className=" navbar-item s-size-6-mobile start-button button is-rounded"
+            href="/"
+          >
+            GET STARTED
+          </a>
+        </div>
       </div>
-    </section>
+    </nav>
   );
 };
 

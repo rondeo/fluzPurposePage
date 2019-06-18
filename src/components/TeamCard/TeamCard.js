@@ -10,10 +10,12 @@ const TeamCard = prop => {
     <div className="card card-container simple-card column">
       <div className="card-detail">
         <SimpleImg
-          height={280}
+          height={320}
+          width={270}
           placeholder="linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%)"
           className="card-detail-image"
           src={img}
+          applyAspectRatio
           alt="profile avatar"
         />
         <img

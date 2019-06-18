@@ -4,8 +4,8 @@ import linkinIcon from "../../assets/linkinIcon.png";
 import { CSSTransition } from "react-transition-group";
 import { SimpleImg } from "react-simple-img";
 
-const LeaderCard = prop => {
-  const { img, name, company, title, detail } = prop;
+const LeaderCard = props => {
+  const { img, name, company, title, detail } = props;
   const [show, setShow] = useState(false);
 
   return (
@@ -16,10 +16,12 @@ const LeaderCard = prop => {
       </div>
 
       <SimpleImg
-        height={300}
+        height={320}
+        width={270}
         placeholder="linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%)"
         className="card-image"
         src={img}
+        applyAspectRatio
         alt="profile avatar"
       />
       <p className="card-company"> {company} </p>

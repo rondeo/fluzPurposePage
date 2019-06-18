@@ -4,7 +4,10 @@
   height: auto;
   width: 98%;
   margin: 0 auto;
+  flex-direction: column;
   &-detail-1 {
+    width: 100%;
+    margin: 0 auto;
     height: auto;
     &-description {
       display: flex;
@@ -56,10 +59,10 @@
   }
 
   &-detail-2 {
-    height: auto;
-    background-color: #f4f5f7;
     width: 100%;
     margin: 0 auto;
+    height: auto;
+    background-color: #f4f5f7;
     @include media("<=tablet") {
       flex-direction: column-reverse;
     }
