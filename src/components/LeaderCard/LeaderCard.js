@@ -49,11 +49,11 @@ const LeaderCard = props => {
 };
 
 LeaderCard.propTypes = {
-  img: PropTypes.object.isRequired,
+  img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  detail: PropTypes.string.isRequired
+  detail: PropTypes.func.isRequired
 };
 
 export default LeaderCard;

@@ -10,7 +10,7 @@ const Header = () => {
     <nav className="navbar nav-bar">
       <div className="nav-logo nav-brand ">
         <a href="/">
-          <img src={logo} />
+          <img src={logo} alt="company logo" />
         </a>
 
         <button

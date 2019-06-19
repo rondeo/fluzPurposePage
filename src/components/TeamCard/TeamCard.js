@@ -35,7 +35,7 @@ const TeamCard = props => {
 };
 
 TeamCard.propTypes = {
-  img: PropTypes.object.isRequired,
+  img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired
 };

@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <section className="Intro Intro-container columns">
       <div className="Intro-description column is-half-desktop is-two-thirds-tablet">
-        <img src={dialogueBubble} />
+        <img src={dialogueBubble} alt="dialogue bubble box" />
         <p>
           In a world that makes so many demands on your money, we know how
           gratifying it is to get something back. Fluz is not just another cash
