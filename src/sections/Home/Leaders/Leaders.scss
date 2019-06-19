@@ -24,6 +24,7 @@
   &-description {
     width: 70%;
     margin: 50px auto;
+    text-align: center;
 
     @include media("<=tablet") {
       width: 90%;

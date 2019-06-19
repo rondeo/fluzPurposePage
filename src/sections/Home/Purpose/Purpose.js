@@ -1,6 +1,6 @@
 import React from "react";
 import "./Purpose.scss";
-import fundingDream from "../../assets/fundingDream.png";
+import fundingDream from "../../../assets/fundingDream.png";
 
 const Purpose = () => {
   return (

@@ -1,6 +1,8 @@
 .hero {
   height: auto;
   width: 98%;
+  position: relative;
+  top: 5rem;
   margin: 0 auto !important;
   background: linear-gradient(180deg, #edb1b7 0%, #e9beae 70.93%, #e9d3c1 100%);
 
@@ -25,14 +27,19 @@
     &-button {
       width: 130px;
       height: 50px;
+      border: 1.5px solid;
+      letter-spacing: 0.15em;
+      font-weight: 700;
       color: white;
       text-decoration: none;
       background-color: #ff5959;
       border-color: #ff5959;
+      transition: color ease-in-out 0.3s;
     }
 
     &-button:hover {
       border-color: #f17878;
+
       color: #ecebeb;
       transition: color ease-in-out 0.3s;
     }

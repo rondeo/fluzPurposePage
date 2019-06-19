@@ -1,17 +1,17 @@
 import React from "react";
 import "./Leaders.scss";
 import LeaderCard from "../../../components/LeaderCard/LeaderCard";
-import andreas from "../../assets/leaders/ANDREAS-ANTRUP.png";
-import Anil from "../../assets/leaders/Anil-Benard-Dende.png";
-import che from "../../assets/leaders/CHE-POPE.png";
-import karl from "../../assets/leaders/KARL-KARLSSON.png";
-import michael from "../../assets/leaders/Michael-Rosen.png";
-import stephen from "../../assets/leaders/STEPHEN-NORRIS.png";
+import andreas from "../../../assets/leaders/ANDREAS-ANTRUP.png";
+import Anil from "../../../assets/leaders/Anil-Benard-Dende.png";
+import che from "../../../assets/leaders/CHE-POPE.png";
+import karl from "../../../assets/leaders/KARL-KARLSSON.png";
+import michael from "../../../assets/leaders/Michael-Rosen.png";
+import stephen from "../../../assets/leaders/STEPHEN-NORRIS.png";
 
 const logos = Array.apply(null, Array(12)).map((logo, index) => (
   <div key={index} className="Leaders-logos-logo">
     <img
-      src={require(`../../assets/logos/logo${index}.png`)}
+      src={require(`../../../assets/logos/logo${index}.png`)}
       alt="company logo"
     />
   </div>

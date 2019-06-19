@@ -3,6 +3,7 @@ import "./LeaderCard.scss";
 import linkinIcon from "../../assets/linkinIcon.png";
 import { CSSTransition } from "react-transition-group";
 import { SimpleImg } from "react-simple-img";
+import PropTypes from "prop-types";
 
 const LeaderCard = props => {
   const { img, name, company, title, detail } = props;
@@ -45,6 +46,14 @@ const LeaderCard = props => {
       </div>
     </div>
   );
+};
+
+LeaderCard.propTypes = {
+  img: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  detail: PropTypes.string.isRequired
 };
 
 export default LeaderCard;

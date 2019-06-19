@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.scss";
 import logo from "../../assets/fluzLogo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -25,18 +26,23 @@ const Header = () => {
       </div>
       <div className={`navbar-menu nav-bar-menu ${active ? "is-active" : ""}`}>
         <div className="navbar-end ">
-          <a className="navbar-item is-size-6-mobile" href="/">
+          <Link to="/" className="navbar-item is-size-6-mobile">
             ABOUT
-          </a>
-          <a className="navbar-item is-size-6-mobile" href="/">
+          </Link>
+          <Link
+            to="how-it-works"
+            className="navbar-item is-size-6-mobile"
+            href="/"
+          >
             HOW IT WORKS
-          </a>
-          <a
+          </Link>
+          <Link
+            to="/"
             className=" navbar-item s-size-6-mobile start-button button is-rounded"
             href="/"
           >
             GET STARTED
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

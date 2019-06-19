@@ -1,6 +1,8 @@
 .Intro {
   width: 98%;
   margin: 0 auto;
+  position: relative;
+  text-align: center;
 
   &-container {
     height: auto;
@@ -12,10 +14,12 @@
     margin: 0 auto;
     img {
       width: 100px;
+      margin-top: 3rem;
     }
     p {
       color: white;
       line-height: 1.5rem;
+      padding-bottom: 3rem;
     }
   }
 }

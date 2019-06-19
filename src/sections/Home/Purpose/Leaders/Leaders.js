@@ -1,6 +1,6 @@
 import React from "react";
 import "./Leaders.scss";
-import LeaderCard from "../../../components/LeaderCard/LeaderCard";
+import LeaderCard from "../../components/LeaderCard/LeaderCard";
 import andreas from "../../assets/leaders/ANDREAS-ANTRUP.png";
 import Anil from "../../assets/leaders/Anil-Benard-Dende.png";
 import che from "../../assets/leaders/CHE-POPE.png";

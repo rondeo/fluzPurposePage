@@ -2,9 +2,10 @@ import React from "react";
 import "./TeamCard.scss";
 import linkinIcon from "../../assets/linkinIcon.png";
 import { SimpleImg } from "react-simple-img";
+import PropTypes from "prop-types";
 
-const TeamCard = prop => {
-  const { img, name, title } = prop;
+const TeamCard = props => {
+  const { img, name, title } = props;
 
   return (
     <div className="card card-container simple-card column">
@@ -31,6 +32,12 @@ const TeamCard = prop => {
       </div>
     </div>
   );
+};
+
+TeamCard.propTypes = {
+  img: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 };
 
 export default TeamCard;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Team.scss";
-import DouglasBraun from "../../assets/team/DouglasBraun.png";
-import TeamCard from "../../components/TeamCard/TeamCard";
+import DouglasBraun from "../../../assets/team/DouglasBraun.png";
+import TeamCard from "../../../components/TeamCard/TeamCard";
 
 const Team = () => {
   return (

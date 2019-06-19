@@ -1,6 +1,6 @@
 import React from "react";
 import "./Intro.scss";
-import dialogueBubble from "../../assets/thinking.png";
+import dialogueBubble from "../../../assets/thinking.png";
 
 const Intro = () => {
   return (
@@ -10,8 +10,9 @@ const Intro = () => {
         <p>
           In a world that makes so many demands on your money, we know how
           gratifying it is to get something back. Fluz is not just another cash
-          back app. We're making it possible for friendship and influence to
-          create real income opportunities for everyone
+          back app. We're making it possible for{" "}
+          <b>friendship and influence to create real income opportunities </b>{" "}
+          for everyone
         </p>
       </div>
     </section>

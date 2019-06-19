@@ -1,8 +1,8 @@
 import React from "react";
 import "./Vision.scss";
-import unicorn from "../../assets/unicorn.png";
-import bubbleunicorn1 from "../../assets/bubble-unicorn-1.png";
-import bubbleunicorn2 from "../../assets/bubble-unicorn-2.png";
+import unicorn from "../../../assets/unicorn.png";
+import bubbleunicorn1 from "../../../assets/bubble-unicorn-1.png";
+import bubbleunicorn2 from "../../../assets/bubble-unicorn-2.png";
 import { SimpleImg } from "react-simple-img";
 import { CSSTransition } from "react-transition-group";
 

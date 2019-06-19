@@ -1,9 +1,9 @@
 import React from "react";
 import "./Difference.scss";
-import cashBackImage1 from "../../assets/cashBackImage1.png";
-import cashBackImage2 from "../../assets/cashBackImage2.png";
-import pebble1 from "../../assets/rollingPebbleImage1.png";
-import pebble2 from "../../assets/rollingPebbleImage2.png";
+import cashBackImage1 from "../../../assets/cashBackImage1.png";
+import cashBackImage2 from "../../../assets/cashBackImage2.png";
+import pebble1 from "../../../assets/rollingPebbleImage1.png";
+import pebble2 from "../../../assets/rollingPebbleImage2.png";
 import { SimpleImg } from "react-simple-img";
 
 const Difference = () => {
