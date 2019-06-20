@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bulma": "^0.7.5",
+    "express": "^4.17.1",
     "include-media": "^1.4.9",
     "install": "^0.12.2",
     "node-sass": "^4.12.0",
